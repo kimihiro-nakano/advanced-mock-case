@@ -1,0 +1,48 @@
+.thanks__content {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    padding-top: 20vh;
+    margin: auto;
+    max-width: 1230px;
+}
+.wrapper {
+    width: 100%;
+    max-width: 350px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+}
+.thanks__heading {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+}
+
+.login__button {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.login__button-submit {
+    /* width: 110px; */
+    padding: 7px 15px;
+    margin: 20px;
+    background-color: #315BFB;
+    color: white;
+    /* border: none; */
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.login__button-submit:hover {
+    background-color: #4b6dfb; /* ホバー時の背景色を明るめに */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* ホバー時のボックスシャドウ */
+    transition: background-color 0.3s, box-shadow 0.3s; /* トランジション効果 */
+}

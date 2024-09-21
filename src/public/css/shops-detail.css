@@ -1,0 +1,225 @@
+.shop__detail {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 50px 50px;
+    background-color: #f0f0f0;
+    max-width: 1230px;
+}
+
+.detail__sections {
+    width: 48%;
+}
+
+.return__btn {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.return__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
+    padding: 5px;
+    text-decoration: none;
+    border: none;
+    background-color: #fff;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.return__button:hover {
+    background-color: #e0e0e0; /* 少し明るいブルーに変更 */
+    border-color: #ffffff; /* ボーダーの色を白に */
+    transition: background-color 0.2s, transform 0.2s; /* ホバーを滑らかに */
+}
+
+.shop {
+    margin: 0 0 0 10px;
+}
+
+.shops__img {
+    flex: 1;
+    overflow: hidden;
+}
+
+.shop__detail img {
+    width: 100%;
+}
+
+.shop__detail {
+    display: flex;
+}
+
+.shop__reservation {
+    width: 48%;
+    border-radius: 5px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+    background-color: #315bfb;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+
+.reservation {
+    margin: auto;
+}
+
+.reservation-title,
+.review-title,
+.no__review {
+    margin-left: 20px;
+}
+
+.review-title {
+    margin-top: 30px;
+}
+
+.reservation-date,
+.reservation-time,
+.reservation-number {
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    padding: 2px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.reservation-time,
+.reservation-number {
+    width: 80%;
+    padding: 3px;
+}
+
+.reservation__list,
+.review__list {
+    width: 80%;
+    border-radius: 5px;
+    background-color: #4d7eff;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px;
+    font-size: 0.8rem;
+}
+
+.reservation__label {
+    padding-right: 20px;
+}
+
+.error__message {
+    margin-left: 20px;
+    color: #FFC0CB
+}
+
+.reservation__button {
+    margin-top: 10em;
+    width: 100%;
+    text-align: center;
+}
+
+.reservation__button-submit {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 0 0 5px 5px;
+    background-color: #0438ff;
+    color: #fff;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.reservation__button-submit:hover {
+    background-color: #002db3; /* 少し明るいブルーに変更 */
+    color: #ffffff; /* テキスト色を明確な白に保つ */
+    border-color: #ffffff; /* ボーダーの色を白に */
+    transition: background-color 0.2s, transform 0.2s; /* ホバーを滑らかに */
+}
+
+.error-message {
+    display: none;
+    padding: 10px 0;
+    margin: 0 auto;
+    border-color: #fe5869;
+    background-color: #fe5869;
+    color: #ffffff;
+    text-align: center;
+    width: 1230px;
+}
+
+.reservation__message {
+    color: #FFC0CB
+}
+
+.review__item {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.review__label {
+    width: 80px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.review__data {
+    flex: 1;
+    word-break: break-word;
+}
+
+.full-comment {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.full-comment.show {
+    display: block;
+    max-height: 1000px;
+}
+
+.full-comment.no-toggle {
+    max-height: none;
+    overflow: visible;
+}
+
+.comment-preview {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .shop__detail {
+        display: block;
+        padding: 10px;
+    }
+
+    .detail__sections {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .shop__reservation {
+        width: 100%;
+    }
+
+    .reservation-time,
+    .reservation-number {
+        width: 80%;
+    }
+
+    .review__list {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+}

@@ -1,0 +1,63 @@
+.verify__content {
+    padding: 30px 15px;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    max-width: 1230px;
+    height: calc(100vh - 150px);
+}
+
+.verify__heading {
+    margin-bottom: 20px;
+    color: #202124;
+    text-align: center;
+    font-size: 20px;
+}
+
+.verify__group-content {
+    text-align: center;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.alert__success {
+    margin-bottom: 1rem;
+}
+
+.verify__button {
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.verify__button-submit {
+    text-align: center;
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background: #315BFB;
+    color: #fff;
+    cursor: pointer;
+}
+
+.verify__button-submit:hover {
+    background-color: #4b6dfb; /* ホバー時の背景色を明るめに */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* ホバー時のボックスシャドウ */
+    transition: background-color 0.3s, box-shadow 0.3s; /* トランジション効果 */
+}
+
+.login__link-group {
+    text-align: center;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.login__button-submit {
+    text-decoration: none;
+    font-size: 13px;
+    color: #315BFB;
+    transition: color 0.3s;
+}
+
+.login__button-submit:hover {
+    color: #1d3cbe; /* より濃い青色 */
+}

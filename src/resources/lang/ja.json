@@ -1,0 +1,10 @@
+{
+    "Hello!": "こんにちは！飲食店予約サイトRese(リーズ)です！",
+    "Please click the button below to verify your email address.": "下のボタンをクリックして、メールアドレスの確認を行ってください。",
+    "Verify Email Address": "メールアドレスの認証",
+    "If you did not create an account, no further action is required.": "このメールに心当たりがない場合は、本メールは破棄して頂けるようお願いいたします。",
+    "Regards": "よろしくお願いいたします。",
+    ",":" ",
+    "Laravel": "Rese",
+    "If you're having trouble clicking the Verify Email Address button, copy and paste the URL below into your web browser:": "もしもボタンをクリックしてもページが開かない場合は、下記のURLをコピーして、ブラウザに貼り付けてアクセスしてください。"
+}

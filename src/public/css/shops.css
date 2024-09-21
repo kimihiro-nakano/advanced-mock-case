@@ -1,0 +1,269 @@
+.search {
+    width: 30em;
+}
+
+.search__inner {
+    display: flex;
+    justify-content: flex-start;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 30px 0 20px 10px;
+    background-color: #fff;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding-left: 5px;
+    width: 100%;
+}
+
+.search-form__area,
+.search-form__genre,
+.search-form__keyword {
+    display: flex;
+    align-items: center;
+}
+
+.search-form__divider {
+    display: flex;
+    width: 1px;
+    background-color: #f0f0f0;
+    height: 25px;
+}
+
+.search-form__area-select {
+    border: none;
+    outline: none;
+    width: 90px;
+    padding: 5px;
+}
+
+.search-form__genre-select {
+    border: none;
+    outline: none;
+    width: 100px;
+    padding: 5px;
+    border-left: solid 1px #ccc;
+    border-right: solid 1px #ccc;
+}
+
+.search-form__keyword-input {
+    border: none;
+    outline: none;
+    width: 200px;
+}
+
+.search-btn:hover {
+    background-color: #d3d3d3;
+    color: #000;
+}
+
+.fa-search {
+    transition: color 0.3s;
+}
+
+.search-btn:hover .fa-search {
+    color: #315BFB;
+}
+
+.search-btn {
+    margin-left: 10px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.fa, .fas {
+    padding: 5px;
+    color: #777;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 20px 50px;
+    background-color: #f0f0f0;
+    max-width: 1230px;
+    gap: 20px 10px;
+}
+
+.shops__card {
+    width: 24%;
+    max-height: 265px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.shops__img {
+    flex: 1; /* 画像部分がカードの高さの半分を占める */
+    overflow: hidden; /* 画像がはみ出さないようにする */
+}
+
+.shops__img img {
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+}
+
+.card__content {
+    margin: 0;
+    padding: 10px 15px 5px;
+}
+
+.card__title {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.card__tag {
+    display: inline-block;
+    font-size: 10px;
+    margin: 0;
+}
+
+.detail__button {
+    display: flex;
+    justify-content: space-between;
+    height: 25px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+    gap: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.detail__button-submit {
+    width: 80px;
+    padding: 5px;
+    border: none;
+    color: white;
+    background-color: #315BFB;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 11px;
+    z-index: 2;
+    position: relative;
+}
+
+.detail__button-submit:hover {
+    background-color: #4b6dfb;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.favorite {
+    display: inline-block;
+}
+
+.favorite__button {
+    background-color: white;
+    padding: 0;
+    margin-bottom: 15px;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+    position: relative;
+}
+
+.favorite__button .fa-heart {
+    color: #f0f0f0;
+    font-size: 2em;
+}
+
+.favorite__button.active .fa-heart {
+    color: #fc2424;
+}
+
+.favorite__button:hover .fa-heart {
+    color: #fca5a5;
+    transform: scale(1.1);
+    transition: transform 0.2s, color 0.2s;
+}
+
+.reset-btn {
+    display: none;
+    border: solid 1.5px #777;
+    text-decoration: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, color 0.3s;
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.reset-btn:hover {
+    background-color: #d9d9d9;
+}
+
+.error-message {
+    display: none;
+    padding: 10px 0;
+    margin: 0 auto;
+    border-color: #fe5869;
+    background-color: #fe5869;
+    color: #ffffff;
+    text-align: center;
+    width: 1230px;
+}
+
+@media (max-width: 768px) {
+    .shops__card {
+        width: 46%;
+        margin: 0 1%;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0 auto;
+        padding: 20px 10px;
+        background-color: #f0f0f0;
+        gap: 20px;
+    }
+
+    .search {
+        width: 100%;
+    }
+
+    .search-form {
+        padding: 0;
+    }
+
+    .search-form__area-select,
+    .search-form__genre-select,
+    .search-form__keyword-input {
+        padding: 0;
+        width: auto;
+    }
+
+    .search-form__keyword-input {
+        width: 80%;
+    }
+
+    .search__inner {
+        margin: 20px 0;
+    }
+
+    .search-btn {
+        margin: 0;
+        padding: 0;
+    }
+
+    .error-message {
+        width: auto;
+    }
+}

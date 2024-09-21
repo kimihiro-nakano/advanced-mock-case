@@ -1,0 +1,87 @@
+.login-form__content {
+    margin: 0 auto;
+    padding-top: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #f0f0f0;
+    height: 100vh;
+    max-width: 1230px;
+}
+.wrapper {
+    width: 100%;
+    max-width: 350px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+}
+.login-form__heading {
+    background-color: #315BFB;
+    color: #ffffff;
+    padding: 3px 20px;
+    border-radius: 5px 5px 0 0;
+    text-align: left;
+    font-weight: bold;
+}
+
+.form__group-content {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.img {
+    margin: 0 10px 0 25px ;
+}
+
+.img img{
+    width: 20px;
+}
+
+.form__group-content label {
+    display: block;
+    margin: 15px 0;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
+.form__group-content input {
+    flex: 1;
+    padding: 3px 0;
+    margin-right: 20px;
+    border: none;
+    border-bottom: 1px solid #757575;
+}
+
+.form__error {
+    color: #ff0000;
+    font-size: 14px;
+    margin-left: 55px;
+    text-align: left;
+}
+
+.form__input-text {
+    margin-left: 55px;
+}
+
+.form__button {
+    text-align: right;
+}
+
+.form__button-submit {
+    width: 90px;
+    padding: 5px;
+    margin: 5px 20px 20px;
+    background-color: #315BFB;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.form__button-submit:hover {
+    background-color: #4b6dfb; /* ホバー時の背景色を明るめに */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* ホバー時のボックスシャドウ */
+    transition: background-color 0.3s, box-shadow 0.3s; /* トランジション効果 */
+}

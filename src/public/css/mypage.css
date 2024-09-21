@@ -1,0 +1,315 @@
+.mypage__content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 50px;
+    background-color: #f0f0f0;
+    max-width: 1230px;
+    margin: 0 auto;
+    height: auto;
+}
+
+.mypage__sections {
+    display: flex;
+    /* flex-direction: column; */
+    width: 100%;
+    flex: 1;
+    overflow-y: auto;
+}
+
+.mypage__title {
+    width: 100%;
+    text-align: center;
+}
+
+.mypage__reservation {
+    width: 45%;
+    max-height: 265px;
+    box-sizing: border-box;
+}
+
+.reservation__list {
+    width: 80%;
+    max-height: 265px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+    background-color: #315bfb;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.card__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.clock__img {
+    margin: 10px 20px;
+}
+
+.clock__img img {
+    width: 20px;
+}
+
+.title {
+    margin-right: auto;
+}
+
+.modal__close-btn {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    line-height: 1;
+    position: relative;
+    border: 0.15em solid;
+    border-radius: 50%;
+    font-size: 0.9em;
+    height: 1.7em;
+    background-color: #315BFB;
+    cursor: pointer;
+}
+
+.modal__close-btn:hover {
+    background-color: #4b6dfb;
+    color: #ffffff;
+    border-color: #ffffff;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.reservation__table {
+    margin: 0 0 10px 20px;
+    height: 120px;
+}
+
+.edit__button {
+    width: 100%;
+    text-align: center;
+}
+
+.edit__button-submit,
+.review__button-submit {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 0 0 5px 5px;
+    background-color: #0438ff;
+    color: #fff;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.edit__button-submit:hover,
+.review__button-submit:hover {
+    background-color: #002db3;
+    color: #ffffff;
+    border-color: #ffffff;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.no__edit,
+.reviewed {
+    width: 100%;
+    text-align: center;
+    font-size: 0.8rem;
+
+}
+
+.review {
+    text-decoration: none;
+    border: none;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.favorite {
+    width: 50%;
+}
+
+.favorite__content {
+    width: 55%;
+    box-sizing: border-box;
+}
+
+.reservation__content {
+    margin: 20px;
+    }
+
+.mypage__sections {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.favorite__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.shops__card {
+    width: 45%;
+    max-height: 265px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.shops__img {
+    flex: 1; /* 画像部分がカードの高さの半分を占める */
+    overflow: hidden; /* 画像がはみ出さないようにする */
+}
+
+.shops__img img {
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+}
+
+.card__content {
+    margin: 0;
+    padding: 10px 15px 5px;
+}
+
+.card__title {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+.card__tag {
+    display: inline-block;
+    font-size: 10px;
+    margin: 0;
+}
+
+.detail__button {
+    display: flex;
+    justify-content: space-between;
+    height: 25px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+    gap: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.detail__button-submit {
+    width: 80px;
+    padding: 5px;
+    border: none;
+    color: white;
+    background-color: #315BFB;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 11px;
+    z-index: 2;
+    position: relative;
+}
+
+.detail__button-submit:hover {
+    background-color: #4b6dfb;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.favorite {
+    display: inline-block;
+}
+
+.favorite__button {
+    background-color: white;
+    padding: 0;
+    margin-bottom: 15px;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+    position: relative;
+}
+
+.favorite__button .fa-heart {
+    color: #fc2424;
+    font-size: 2em;
+}
+
+.favorite__button.active .fa-heart {
+    color: #f0f0f0;
+}
+
+.favorite__button:hover .fa-heart {
+    color: #fca5a5;
+    transform: scale(1.1);
+    transition: transform 0.2s, color 0.2s;
+}
+
+.alert__alert-success {
+    padding: 10px 0;
+    margin: 0 auto;
+    border-color: #02ac5f;
+    background-color: #02ac5f;
+    color: #ffffff;
+    text-align: center;
+    width: 1230px;
+}
+
+@media (max-width: 768px) {
+    .mypage__sections {
+        flex-direction: column;
+    }
+
+    .mypage__reservation,
+    .favorite__content {
+        width: 100%;
+        margin: 10px 0;
+        max-height: none;
+        overflow-y: auto;
+    }
+
+    .reservation__list {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .reservation__table {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .edit__button,
+    .review {
+        width: 100%;
+        text-align: center;
+    }
+
+    .edit__button-submit,
+    .review__button-submit {
+        width: 100%;
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .no__edit,
+    .reviewed {
+        width: 100%;
+        text-align: center;
+        font-size: 0.9rem;
+    }
+
+    .favorite__list {
+        justify-content: space-between;
+    }
+
+    .mypage__content {
+        padding: 10px;
+    }
+}
