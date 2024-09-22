@@ -103,7 +103,7 @@
 
 ## ER図
 
-![スクリーンショット 2024-09-22 23.34.26.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/c0d15fd2-4f07-47d1-9f08-737c03342766/7ca59993-ed90-4820-af4b-9e76e40f961e/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-09-22_23.34.26.png)
+<img width="561" alt="スクリーンショット 2024-09-22 23 34 26" src="https://github.com/user-attachments/assets/3e00dbeb-0dbd-4fac-8121-512726f65e9d">
 
 ## 環境構築
 
