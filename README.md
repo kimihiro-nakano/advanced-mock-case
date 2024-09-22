@@ -112,7 +112,7 @@
 git clone git@github.com:kimihiro-nakano/beginner-mock-case.git
 ```
 
-1.  DockerDesktopアプリを立ち上げる
+2.  DockerDesktopアプリを立ち上げる
 
 ```
 docker-compose up -d --build
@@ -128,19 +128,19 @@ mysql:
     environment:
 ```
 
-1. Laravel環境構築
+3. Laravel環境構築
 
 ```
 docker-compose exec php bash
 ```
 
-1. Composerのインストール
+4. Composerのインストール
 
 ```
  composer install
 ```
 
-1.  .env.exampleファイルから .envを作成し、環境変数を変更
+5.  .env.exampleファイルから .envを作成し、環境変数を変更
 
 ```
 
@@ -156,16 +156,16 @@ MAIL_HOST=mailcatcher
 MAIL_FROM_ADDRESS=ailcatcher@example.com
 ```
 
-1. アプリケーションキーの作成
+6. アプリケーションキーの作成
 
 ```
 php artisan key:generate
 ```
 
-1. マイグレーションの実行
+7. マイグレーションの実行
 
 ```
 php artisan migrate
 ```
 
-1. シーディングの実行
+8. シーディングの実行
