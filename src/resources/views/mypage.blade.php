@@ -31,7 +31,7 @@
                 $futureCounter = 1;
                 @endphp
 
-                @foreach($reservations->sortByDesc('date') as $reservation)
+                @forelse($reservations->sortByDesc('date') as $reservation)
                 @php
                 $reservationDateTime = \Carbon\Carbon::parse($reservation->date . ' ' . $reservation->time);
                 @endphp
@@ -109,7 +109,9 @@
                         @endif
                     </div>
                 </div>
-                @endforeach
+                @empty
+                    <p>現在、レストランの予約はありません。</p>
+                @endforelse
             </div>
         </div>
 

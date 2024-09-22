@@ -65,5 +65,6 @@ class Kernel extends HttpKernel
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
         // 他のミドルウェア
         'auth.message' => \App\Http\Middleware\RedirectIfNotAuthenticatedWithMessage::class,
+        'role' => \App\Http\Middleware\RoleMiddleware::class,
     ];
 }

@@ -188,8 +188,8 @@ function updateAvailableTimes() {
 
             // 今日の予約の場合、過去の時間を除外
             if (selectedDate === now.toISOString().split('T')[0]) {
-                if (optionTime.getTime() <= now.getTime()) {
-                    continue;
+                if (optionTime.getTime() <= twoHoursEarlier.getTime()) {
+                    continue; // 2時間前の時間を除外
                 }
             }
 
@@ -207,7 +207,11 @@ function updateAvailableTimes() {
 
 
         // 日付が変更されたときに利用可能な時間を更新
-        document.getElementById('reservation-date').addEventListener('change', updateAvailableTimes);
+        document.getElementById('reservation-date').addEventListener('change', function() {
+            // 日付が選択されたときに予約リストを更新
+            document.getElementById('selected-date').textContent = this.value || '日付を指定してください';
+            updateAvailableTimes();
+        });
 
         // ページ読み込み時に時間を更新
         if (document.getElementById('reservation-date').value) {

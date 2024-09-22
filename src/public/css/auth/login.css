@@ -45,12 +45,22 @@
     font-size: 12px;
 }
 
-.form__group-content input {
+.form__group-content input,
+.form__group-content select {
     flex: 1;
     padding: 3px 0;
     margin-right: 20px;
     border: none;
     border-bottom: 1px solid #757575;
+}
+
+select {
+    color: #757575;
+    cursor: pointer;
+}
+
+select:valid {
+    color: #000;
 }
 
 .form__error {

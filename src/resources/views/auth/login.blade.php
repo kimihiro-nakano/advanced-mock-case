@@ -35,12 +35,18 @@
                     {{ $message }}
                     @enderror
                 </div>
+                <div class="form__group-content">
+                    <div class="img">
+                        <img src="{{ asset('/img/category.png') }}"/>
+                    </div>
+                    <select name="role" id="role" required>
+                        <option value="">Category</option>
+                        <option value="user" {{ old('role') == 'user' ? 'selected' : '' }}>利用者
+                        </option>
+                        <option value="shop_owner" {{ old('role') == 'shop_owner' ? 'selected' : '' }}>店舗代表者</option>
+                        <option value="admin" {{ old('role') == 'admin' ? 'selected' : '' }}>管理者</option>
+                    </select>
             </div>
-            {{-- <div class="form__group-content">
-                <div class="form__input-text">
-                    <input type="password" name="password_confirmation" placeholder="ConfirmPassword" />
-                </div>
-            </div> --}}
             <div class="form__button">
                 <button class="form__button-submit" type="submit">ログイン</button>
             </div>

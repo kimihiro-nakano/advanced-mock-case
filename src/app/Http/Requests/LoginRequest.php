@@ -25,7 +25,8 @@ class LoginRequest extends FormRequest
     {
         return [
             'email' => ['required', 'string', 'exists:users,email', 'email', 'max:191'],
-            'password' => ['required', 'min:8', 'max:191']
+            'password' => ['required', 'min:8', 'max:191'],
+            'role' => ['required', 'in:user,shop/owner,admin']
         ];
     }
 
@@ -40,6 +41,8 @@ class LoginRequest extends FormRequest
             'password.required' => 'パスワードを入力してください',
             'password.min' => 'パスワードを8文字以上で入力してください',
             'password.max' => 'パスワードを191文字以下で入力してください',
+            'role,required' => '役割を選択してください',
+            'role,in' => '無効な役割が選択されました'
         ];
     }
 }
