@@ -169,3 +169,7 @@ php artisan migrate
 ```
 
 8. シーディングの実行
+   
+```
+php artisan db:seed
+```
